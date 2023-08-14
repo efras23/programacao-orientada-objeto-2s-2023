@@ -6,12 +6,16 @@ package atividade1;
 public class verificaNumeroPrimo {
 
     public static void main(String args[]) {
-        System.out.println("Hello");
-        verificarNumeroPrimo(12345);
+        verificarNumeroPrimo(7);
     }
 
     public static void verificarNumeroPrimo(Integer n) {
-
+        if (n < 2) {
+            System.out.println("0");
+        } else if (n == 2 || n == 3 || n == 5 || n == 7) {
+            System.out.println("1");
+        } else {
+            /* falta implementar */
+        }
     }
-
 }
