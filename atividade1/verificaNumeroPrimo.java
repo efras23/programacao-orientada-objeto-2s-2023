@@ -6,7 +6,7 @@ package atividade1;
 public class verificaNumeroPrimo {
 
     public static void main(String args[]) {
-        verificarNumeroPrimo(7); /* digitar número primo */
+        verificarNumeroPrimo(179); /* digitar número primo */
     }
 
     public static void verificarNumeroPrimo(Integer n) {
@@ -14,10 +14,18 @@ public class verificaNumeroPrimo {
 
         if (n < 2) {
             System.out.println("0");
-        } else if (n == 2 || n == 3 || n == 5 || n == 7) {
-            System.out.println("1");
         } else {
-            /* falta implementar */
+            int qtdDivisores = 2;
+            for (int i = 2; i < n/2; i++) {
+                if (n % i == 0) {
+                    qtdDivisores++;
+                }
+            }
+            if (qtdDivisores <= 2) {
+                System.out.println("1");
+            } else {
+                System.out.println("0");
+            }
         }
     }
 }
