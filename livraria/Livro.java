@@ -7,12 +7,12 @@ public class Livro {
     String editora;
     int qtdPags;
 
-    Livro(int id, String titulo, String anoPublicacao, String editora, int qtdPag){
+    Livro(int id, String titulo, String anoPublicacao, String editora, int qtdPags){
         this.id = id;
         this.titulo = titulo;
         this.anoPublicacao = anoPublicacao;
         this.editora = editora;
-        this.qtdPags = qtdPag;
+        this.qtdPags = qtdPags;
     }
 
     String detalhar(){

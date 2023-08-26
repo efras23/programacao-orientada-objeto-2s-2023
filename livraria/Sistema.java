@@ -14,6 +14,7 @@ public class Sistema {
             System.out.println("3. Detalhar livro");
             System.out.println("4. Sair");
             opcao = scanner.nextInt();
+            scanner.nextLine(); //lixo do buffer
             executarOpcao(opcao, scanner, efraim);
         }
 
@@ -21,8 +22,8 @@ public class Sistema {
         scanner.close();
     }
 
-    public static void executarOpcao(int op, Scanner scanner, Livraria efraim){
-        switch(op){
+    public static void executarOpcao(int opcao, Scanner scanner, Livraria efraim){
+        switch(opcao){
             case 1:
                 System.out.println("Listando livros...");
 
