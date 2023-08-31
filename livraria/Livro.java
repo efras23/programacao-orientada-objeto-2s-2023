@@ -26,4 +26,10 @@ public class Livro {
 
         return detalhe;
     }
+
+    String imprimir(){
+        String ret="";
+        ret = this.id + " - " + this.titulo + " - " + this.anoPublicacao;
+        return ret;
+    }
 }

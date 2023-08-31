@@ -6,7 +6,7 @@ public class Sistema {
     public static void main(String[] args){
         int opcao = 0;
         Scanner scanner = new Scanner(System.in);
-        Livraria efraim = new Livraria();
+        Livraria livraria = new Livraria();
 
         while(opcao != 4) {
             System.out.println("1. Listar livros");
@@ -15,18 +15,19 @@ public class Sistema {
             System.out.println("4. Sair");
             opcao = scanner.nextInt();
             scanner.nextLine(); //lixo do buffer
-            executarOpcao(opcao, scanner, efraim);
+
+            executarOpcao(opcao, scanner, livraria);
         }
 
         System.out.println("Sistema encerrado.");
         scanner.close();
     }
 
-    public static void executarOpcao(int opcao, Scanner scanner, Livraria efraim){
+    public static void executarOpcao(int opcao, Scanner scanner, Livraria livraria){
         switch(opcao){
             case 1:
                 System.out.println("Listando livros...");
-
+                System.out.println(livraria.listarLivros());
                 break;
             case 2:
                 System.out.println("Adicionando livro...");
@@ -43,10 +44,13 @@ public class Sistema {
                 int qtdPags = scanner.nextInt();
 
                 Livro livro = new Livro(id, titulo, ano, editora, qtdPags);
-                efraim.adicionarLivro(livro);
+                livraria.adicionarLivro(livro);
                 break;
             case 3:
-                System.out.println("Destalhando livro...");
+                System.out.println("Detalhando livro...\n");
+                System.out.print("Buscar livro por ID: ");
+                int idBusca = scanner.nextInt();
+                System.out.println(livraria.buscarLivroPorId(idBusca));
                 break;
         }
     }
