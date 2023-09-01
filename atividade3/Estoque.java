@@ -18,7 +18,38 @@ public class Estoque {
         return listaProdutos;
     }
 
-    public void addProdutos(String nomeProduto, int qtd){
-        produtos.add(new )
+    public int procurarProduto(String nomeProduto){
+        int produtoEncontrado = 0;
+
+        for(Produto produto : this.produtos){
+            if(produto.compNomeProduto(nomeProduto) == 1){
+                produtoEncontrado = 1;
+                System.out.println("\n" + produtoEncontrado + "\n");
+            }
+        }
+
+        return produtoEncontrado;
+    }
+
+    public void atualizarProduto(String nomeProduto, int qtd){
+        for (Produto produto : this.produtos){
+            if(produto.compNomeProduto(nomeProduto) == 1){
+                produto.mudarQuantidade(qtd);
+            }
+        }
+    }
+
+    public void addProduto(Produto produto){
+        this.produtos.add(produto);
+    }
+
+    public void removerProduto(String nomeProduto){
+        for(Produto produto : this.produtos){
+            if(nomeProduto == produto.nome){
+                /*
+                 ...
+                 */
+            }
+        }
     }
 }
