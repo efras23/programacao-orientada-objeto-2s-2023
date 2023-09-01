@@ -6,6 +6,7 @@ public class Sistema{
     public static void main(String[] agrs){
         int opcao = 0;
         Scanner scanner = new Scanner(System.in);
+        Estoque estoque = new Estoque();
 
         do{
             System.out.println("GERENCIAMENTO DE ESTOQUE\n");
@@ -24,6 +25,31 @@ public class Sistema{
 
         } while(opcao != 5);
 
+        System.out.println("\tSistema encerrado.\n");
         scanner.close();
+    }
+
+    public void executarAcao(int opcao, Estoque estoque, Scanner scanner){
+        switch(opcao){
+            case 1:
+                System.out.println("\n\tListando livros...");
+                listarProdutos();
+                break;
+            case 2:
+                atualizarProdutos();
+                break;
+            case 3:
+                System.out.println("\n\tAdicionando produtos...\n");
+                System.out.print("\tNome: ");
+                String nomeProduto = scanner.nextLine();
+                System.out.print("\tQuantidade: ");
+                int qtd = scanner.nextInt();
+                scanner.nextLine();
+                estoque.addProdutos(nomeProduto,qtd);
+                break;
+            case 4:
+                remProdutos();
+                break;
+        }
     }
 }

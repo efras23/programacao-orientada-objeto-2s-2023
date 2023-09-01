@@ -1,0 +1,49 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "verificaNumeroPrimo",
+            "request": "launch",
+            "mainClass": "atividade1.verificaNumeroPrimo",
+            "projectName": "repos-github_ab0030bd"
+        },
+        {
+            "type": "java",
+            "name": "Exercicio1",
+            "request": "launch",
+            "mainClass": "atividade2.Exercicio1",
+            "projectName": "repos-github_ab0030bd"
+        },
+        {
+            "type": "java",
+            "name": "Exercicio2",
+            "request": "launch",
+            "mainClass": "atividade2.Exercicio2",
+            "projectName": "repos-github_ab0030bd"
+        },
+        {
+            "type": "java",
+            "name": "Sistema",
+            "request": "launch",
+            "mainClass": "atividade3.Sistema",
+            "projectName": "repos-github_ab0030bd"
+        },
+        {
+            "type": "java",
+            "name": "Sistema(1)",
+            "request": "launch",
+            "mainClass": "livraria.Sistema",
+            "projectName": "repos-github_ab0030bd"
+        }
+    ]
+}
