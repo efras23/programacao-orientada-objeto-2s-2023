@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Executavel",
+            "request": "launch",
+            "mainClass": "encapsulamento.Executavel",
+            "projectName": "repos-github_ab0030bd"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
