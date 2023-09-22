@@ -8,6 +8,20 @@
             "type": "java",
             "name": "Executavel",
             "request": "launch",
+            "mainClass": "heranca.Executavel",
+            "projectName": "programacao-orientada-objeto-2s-2023_4475093d"
+        },
+        {
+            "type": "java",
+            "name": "Executavel",
+            "request": "launch",
+            "mainClass": "Executavel",
+            "projectName": "programacao-orientada-objeto-2s-2023_4475093d"
+        },
+        {
+            "type": "java",
+            "name": "Executavel",
+            "request": "launch",
             "mainClass": "encapsulamento.Executavel",
             "projectName": "repos-github_ab0030bd"
         },
