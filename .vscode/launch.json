@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ExemploHashMap",
+            "request": "launch",
+            "mainClass": "collections.ExemploHashMap",
+            "projectName": "programacao-orientada-objeto-2s-2023_4475093d"
+        },
+        {
+            "type": "java",
+            "name": "ExemploLinkedList",
+            "request": "launch",
+            "mainClass": "collections.ExemploLinkedList",
+            "projectName": "programacao-orientada-objeto-2s-2023_4475093d"
+        },
+        {
+            "type": "java",
+            "name": "ExemploVector",
+            "request": "launch",
+            "mainClass": "collections.ExemploVector",
+            "projectName": "programacao-orientada-objeto-2s-2023_4475093d"
+        },
+        {
+            "type": "java",
+            "name": "ExemploArrayList",
+            "request": "launch",
+            "mainClass": "collections.ExemploArrayList",
+            "projectName": "programacao-orientada-objeto-2s-2023_4475093d"
+        },
+        {
+            "type": "java",
             "name": "Executavel",
             "request": "launch",
             "mainClass": "heranca.Executavel",
