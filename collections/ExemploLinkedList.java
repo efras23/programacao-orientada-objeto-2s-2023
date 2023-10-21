@@ -7,13 +7,13 @@ public class ExemploLinkedList {
 
         LinkedList<Integer> inteiros = new LinkedList<>();
 
-        inteiros.add(1);
-        inteiros.add(2);
-        inteiros.add(3);
+        inteiros.add(10);
+        inteiros.add(20);
+        inteiros.add(30);
 
         System.out.println(inteiros.get(1));
 
-        inteiros.add(1, 4);
+        inteiros.add(1, 15);
         System.out.println(inteiros.get(1));
         System.out.println(inteiros.get(2));
         
